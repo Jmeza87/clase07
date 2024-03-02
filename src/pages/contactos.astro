@@ -1,0 +1,87 @@
+---
+import Layout from "../layout/Layout.astro";
+---
+
+<Layout>
+
+<h1 class="text-center">Contacto</h1>
+
+
+<div class="container">
+    <h2>Formulario de Contacto</h2>
+   
+  </div>
+
+  <form>
+
+    <div class="container my-4">
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <form action="/contactos" method="post">
+                    <div class="form-group">
+                      <label for="nombre">Nombre:</label>
+                      <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Telefono:</label>
+                        <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su telefono">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="estado">Estado:</label>
+                        <select name="mi_lista" class="form-control" id="estado" >
+                                    <option value="1">Amazonas</option>
+                                    <option value="2">Anzoátegui</option>
+                                    <option value="3">Apure</option>
+                                    <option value="4">Aragua</option>
+                                    <option value="5">Barinas</option>
+                                    <option value="6">Bolívar</option>
+                                    <option value="7">Carabobo</option>
+                                    <option value="8">Cojedes</option>
+                                    <option value="9">Delta Amacuro</option>
+                                    <option value="10">Distrito Capital</option>
+                                    <option value="11">Falcón</option>
+                                    <option value="12">Guárico</option>
+                                    <option value="13">Lara</option>
+                                    <option value="14">Mérida</option>
+                                    <option value="15">Miranda</option>
+                                    <option value="16">Monagas</option>
+                                    <option value="17">Nueva Esparta</option>
+                                    <option value="18">Portuguesa</option>
+                                    <option value="19">Sucre</option>
+                                    <option value="20">Táchira</option>
+                                    <option value="21">Trujillo</option>
+                                    <option value="22">Vargas</option>
+                                    <option value="23">Yaracuy</option>
+                                    <option value="24">Zulia</option>
+                           </select>
+
+                    <div class="form-group">
+                      <label for="mensaje">Mensaje:</label>
+                      <textarea class="form-control" id="mensaje" rows="5" placeholder="Ingrese su mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger my-4">Enviar</button>
+                  </form>
+            
+            </div>
+        </div>
+            <div class="col-md-6">
+            <img src="/contactos.png" alt="" width="350px">
+            </div>
+
+    
+</form>
+</div>
+  </div>
+
+
+</Layout> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.boots

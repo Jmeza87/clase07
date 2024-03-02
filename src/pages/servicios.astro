@@ -1,0 +1,39 @@
+---
+let nombre="Jesus Meza";
+let edad=36;
+let estatura=1.70;
+let diasSemana = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+let alumnos = [
+  {
+    nombre: "Juan",
+    cedula: "123456789",
+    edad: 20
+  },
+  {
+    nombre: "María",
+    cedula: "987654321",
+    edad: 22
+  },
+  {
+    nombre: "Carlos",
+    cedula: "456789123",
+    edad: 21
+  }
+];
+
+console.log(nombre);
+
+import Layout from "../layout/Layout.astro";
+---
+
+<Layout>
+
+<h1 class="text-center">Servicios</h1>
+
+<h1>Nombre:{nombre}</h1>
+<h1>Edad:{edad}</h1>
+<h1>Estatura:{estatura}</h1>
+<h1>Dia de la semana es :{diasSemana[6]}</h1>
+
+
+</Layout>
